@@ -1,0 +1,7 @@
+node_modules/
+dist/
+.nafesa-ppt-extract/
+.nafesa-ppt-inspect/
+*.log
+.DS_Store
+Thumbs.db
