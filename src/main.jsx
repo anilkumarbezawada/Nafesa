@@ -10,7 +10,6 @@ import {
   AnimatePresence,
 } from 'framer-motion';
 import {
-  ArrowDown,
   ArrowUpRight,
   BookOpen,
   HeartHandshake,
@@ -235,7 +234,7 @@ function App() {
           <div className="hero-orb hero-orb-2" aria-hidden="true" />
           <motion.img className="hero-blob" src="/assets/olive-blob.svg" alt="" aria-hidden="true" style={{ y: blobY }} />
           <motion.img className="hero-botanical" src="/assets/botanical-sprig.png" alt="" aria-hidden="true"
-            animate={{ rotate: [6, 10, 6], y: [0, -14, 0] }}
+            animate={{ y: [0, -14, 0] }}
             transition={{ duration: 8, repeat: Infinity, ease: 'easeInOut' }}
           />
           <motion.img className="hero-dust" src="/assets/gold-dust.png" alt="" aria-hidden="true"
@@ -271,12 +270,6 @@ function App() {
             </motion.div>
 
           </motion.div>
-          <motion.a className="scroll-cue" href="#about"
-            animate={{ y: [0, 11, 0] }} transition={{ duration: 2.2, repeat: Infinity, ease: 'easeInOut' }}
-            whileHover={{ scale: 1.1 }}
-          >
-            <ArrowDown size={16} /> read on
-          </motion.a>
         </section>
 
         <section id="about" className="section about-section paper-section">
@@ -694,7 +687,7 @@ function App() {
                     initial={{ width: 0 }}
                     whileInView={{ width: '52%' }}
                     viewport={{ once: true }}
-                    transition={{ duration: 1.8, ease: [0.22, 1, 0.36, 1], delay: 0.4 }}
+                    transition={{ duration: 10.2, ease: [0.22, 1, 0.36, 1], delay: 0.4 }}
                   />
                 </div>
 
@@ -704,7 +697,7 @@ function App() {
                   initial={{ left: '0%' }}
                   whileInView={{ left: '49%' }}
                   viewport={{ once: true }}
-                  transition={{ duration: 1.8, ease: [0.22, 1, 0.36, 1], delay: 0.4 }}
+                  transition={{ duration: 10.2, ease: [0.22, 1, 0.36, 1], delay: 0.4 }}
                 >
                   <svg
                     className="run-lady-svg"
@@ -882,7 +875,7 @@ function App() {
               <p className="signature">&mdash; Nafesa Banu</p>
             </motion.div>
             <motion.div variants={staggerItem}>
-              <MagneticBtn className="contact-link" href="mailto:hello@nafesa.com">
+              <MagneticBtn className="contact-link" href="mailto:nafesabanusk@gmail.com">
                 say hello <ArrowUpRight size={17} />
               </MagneticBtn>
             </motion.div>
